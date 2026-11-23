@@ -28,7 +28,8 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/Stack",
+                "cwd": "${workspaceFolder}/Programs/A3ASM",
+                "cwd": "${workspaceFolder}/Programs/A3ASM",
                 "shell": {
                     "executable": "/bin/bash",
                     "args": [
@@ -46,12 +47,18 @@
             ],
             "problemMatcher": []
         },
+        "args",
+        "--probe",
+        "stlink:",
+        "--chip",
+        "--cbuild-run",
+        "${command:cmsis-csolution.getCbuildRunFile}",
         {
             "label": "CMSIS Load",
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/Stack",
+                "cwd": "${workspaceFolder}/Programs/A3ASM",
                 "shell": {
                     "executable": "/bin/bash",
                     "args": [
@@ -73,7 +80,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/Stack",
+                "cwd": "${workspaceFolder}/Programs/A3ASM",
                 "shell": {
                     "executable": "/bin/bash",
                     "args": [
@@ -109,7 +116,7 @@
             "type": "shell",
             "command": "pyocd",
             "options": {
-                "cwd": "${workspaceFolder}/Programs/Stack",
+                "cwd": "${workspaceFolder}/Programs/A3ASM",
                 "shell": {
                     "executable": "/bin/bash",
                     "args": [
@@ -123,6 +130,27 @@
                 "${command:cmsis-csolution.getCbuildRunFile}"
             ],
             "problemMatcher": []
+        },
+        {
+            "label": "C-Pretty-Printer",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "${workspaceFolder}/bin/format_all.py",
+                "${command:cmsis-csolution.getSolutionFile}"
+            ],
+            "group": "none"
+        },
+        {
+            "label": "C-Linter",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "${workspaceFolder}/bin/lint_all.py",
+                "${command:cmsis-csolution.getSolutionFile}"
+            ],
+            "group": "none"
         }
-    ]
+    ],
+    "problemMatcher": []
 }

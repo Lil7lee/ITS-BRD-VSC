@@ -107,7 +107,7 @@
       ]
     },
     {
-      "path": "Programs/Stack/Stack.csolution.yml",
+      "path": "Programs/A3AMS/A3AMS.csolution.yml",
       "target": "ITSboard",
       "config": {
         "run": "arm-debugger.flash: Flash Device"
@@ -117,7 +117,7 @@
   "cmake.ignoreCMakeListsMissing": true,
   "C_Cpp_Runner.msvcBatchPath": "",
   "clangd.arguments": [
-    "--compile-commands-dir=/Users/lillysmueller/ITS-BRD-VSC/Programs/Stack/out/Stack/ITSboard/Debug"
+    "--compile-commands-dir=/Users/lillysmueller/mein-git-projekt/ITS-BRD-VSC/Programs/A3ASM/out/A3ASM/ITSboard_Assembly/Debug"
   ],
   "debug.hideSlowPreLaunchWarning": true,
   "debug.showInStatusBar": "never",

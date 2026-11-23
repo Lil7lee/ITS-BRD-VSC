@@ -1,8 +1,5 @@
 {
     "targetSet": {
-        "Programs/Stack/Stack": {
-            "activeTargetType": "ITSboard"
-        },
         "Programs/A3ASM/A3ASM": {
             "activeTargetType": "ITSboard_Assembly"
         }

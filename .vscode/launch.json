@@ -5,9 +5,10 @@
             "name": "STLink@pyOCD (launch)",
             "type": "gdbtarget",
             "request": "launch",
-            "cwd": "${workspaceFolder}/Programs/Stack",
-            "program": "out/Stack/ITSboard/Debug/Stack.axf",
-            "gdb": "arm-none-eabi-gdb",
+            "cwd": "${workspaceFolder}/Programs/A3ASM",
+            "program": "out/A3ASM/ITSboard_Assembly/Debug/A3ASM.axf",
+            "cwd": "${workspaceFolder}/Programs/A3ASM",
+            "program": "out/A3ASM/ITSboard_Assembly/Debug/A3ASM.axf",
             "auxiliaryGdb": true,
             "preLaunchTask": "CMSIS Load",
             "initCommands": [
@@ -38,15 +39,17 @@
             "cmsis": {
                 "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
                 "updateConfiguration": "auto"
-            }
+            },
+            "gdb": "arm-none-eabi-gdb"
         },
         {
             "name": "STLink@pyOCD (attach)",
             "type": "gdbtarget",
             "request": "attach",
-            "cwd": "${workspaceFolder}/Programs/Stack",
-            "program": "out/Stack/ITSboard/Debug/Stack.axf",
-            "gdb": "arm-none-eabi-gdb",
+            "cwd": "${workspaceFolder}/Programs/A3ASM",
+            "program": "out/A3ASM/ITSboard_Assembly/Debug/A3ASM.axf",
+            "cwd": "${workspaceFolder}/Programs/A3ASM",
+            "program": "out/A3ASM/ITSboard_Assembly/Debug/A3ASM.axf",
             "auxiliaryGdb": true,
             "initCommands": [
                 ""
@@ -64,7 +67,8 @@
             "cmsis": {
                 "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
                 "updateConfiguration": "auto"
-            }
+            },
+            "gdb": "arm-none-eabi-gdb"
         }
     ]
 }

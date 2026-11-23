@@ -1,0 +1,12 @@
+{
+    "targetSet": {
+        "Programs/Stack/Stack": {
+            "activeTargetType": "ITSboard"
+        },
+        "Programs/A3ASM/A3ASM": {
+            "activeTargetType": "ITSboard_Assembly"
+        }
+    },
+    "activeSolution": "../Programs/A3ASM/A3ASM.csolution.yml",
+    "activeTarget": "ITSboard_Assembly"
+}
